@@ -3,38 +3,166 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SpudSuper · SMSF administration, coming soon</title>
-  <meta name="description" content="SpudSuper makes running a self-managed super fund simple, transparent and affordable for Australian workers. Launching soon.">
+  <title>SpudSuper | SMSF Administration Australia, Launching Soon</title>
+  <meta name="description" content="SpudSuper offers simple, affordable SMSF administration for Australian workers: bookkeeping, annual financial statements, SMSF tax returns, audit coordination and compliance. Launching soon.">
+  <link rel="canonical" href="https://spudsuper.com.au/">
+  <meta name="theme-color" content="#FFF0C1">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="logo.png">
-  <meta property="og:title" content="SpudSuper · Coming soon">
-  <meta property="og:description" content="SMSF administration made simple for Aussie workers. Launching soon.">
-  <meta property="og:image" content="https://spudsuper.com.au/logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SpudSuper">
+  <meta property="og:locale" content="en_AU">
+  <meta property="og:title" content="SpudSuper | SMSF Administration Made Simple">
+  <meta property="og:description" content="Simple, affordable SMSF administration for Aussie workers aged 25–55. Launching soon.">
+  <meta property="og:image" content="https://spudsuper.com.au/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:url" content="https://spudsuper.com.au/">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Organization", "ProfessionalService"],
+        "@id": "https://spudsuper.com.au/#org",
+        "name": "SpudSuper",
+        "url": "https://spudsuper.com.au/",
+        "logo": "https://spudsuper.com.au/logo.png",
+        "image": "https://spudsuper.com.au/og-image.png",
+        "email": "hello@spudsuper.com.au",
+        "description": "SMSF administration for Australian workers: bookkeeping, annual financial statements, SMSF tax returns, audit coordination and compliance tracking.",
+        "areaServed": { "@type": "Country", "name": "Australia" },
+        "knowsAbout": ["Self-managed super funds", "SMSF administration", "SMSF annual return", "SMSF audit", "SMSF compliance"],
+        "sameAs": ["https://www.instagram.com/spudsuperau/"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://spudsuper.com.au/#website",
+        "url": "https://spudsuper.com.au/",
+        "name": "SpudSuper",
+        "inLanguage": "en-AU",
+        "publisher": { "@id": "https://spudsuper.com.au/#org" }
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
   <style>
-    :root { --cream: #FFF0C1; --paper: #FFFBEF; --ink: #1a1a1a; --muted: #5c5546; --line: #E8DDBB; }
+    :root {
+      --cream: #FFF0C1;
+      --paper: #FFFBEF;
+      --ink: #1a1a1a;
+      --muted: #5c5546;
+      --line: #E8DDBB;
+    }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html, body { height: 100%; }
-    body { font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--paper); display: flex; flex-direction: column; min-height: 100vh; line-height: 1.55; -webkit-font-smoothing: antialiased; }
-    main { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 56px 20px 40px; }
+    body {
+      font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 56px 20px 40px;
+    }
     .logo { width: 132px; height: 132px; margin-bottom: 28px; }
-    .badge { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; padding: 7px 14px; border: 1.5px solid var(--ink); border-radius: 999px; background: var(--cream); margin-bottom: 22px; }
-    h1 { font-family: "DM Serif Display", Georgia, serif; font-weight: 400; font-size: clamp(40px, 7vw, 64px); line-height: 1.05; letter-spacing: -.01em; margin-bottom: 18px; }
-    .lede { font-size: clamp(17px, 2.4vw, 20px); color: var(--muted); max-width: 520px; margin: 0 auto 32px; }
-    .points { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 36px; }
-    .points li { font-size: 14px; font-weight: 500; padding: 8px 14px; background: #fff; border: 1px solid var(--line); border-radius: 10px; }
-    .cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
-    .btn { display: inline-flex; align-items: center; gap: 8px; font: inherit; font-weight: 700; font-size: 15px; text-decoration: none; padding: 13px 22px; border-radius: 12px; border: 1.5px solid var(--ink); transition: transform .15s ease, box-shadow .15s ease; }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      padding: 7px 14px;
+      border: 1.5px solid var(--ink);
+      border-radius: 999px;
+      background: var(--cream);
+      margin-bottom: 22px;
+    }
+    h1 {
+      font-family: "DM Serif Display", Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(40px, 7vw, 64px);
+      line-height: 1.05;
+      letter-spacing: -.01em;
+      margin-bottom: 18px;
+    }
+    .lede {
+      font-size: clamp(17px, 2.4vw, 20px);
+      color: var(--muted);
+      max-width: 520px;
+      margin: 0 auto 32px;
+    }
+    .points {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 36px;
+    }
+    .points li {
+      font-size: 14px;
+      font-weight: 500;
+      padding: 8px 14px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+    .about { max-width: 600px; margin: 0 auto 32px; }
+    .about h2 {
+      font-family: "DM Serif Display", Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(22px, 3.2vw, 26px);
+      margin-bottom: 10px;
+    }
+    .about p { font-size: 15px; color: var(--muted); }
+    .cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font: inherit;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      padding: 13px 22px;
+      border-radius: 12px;
+      border: 1.5px solid var(--ink);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
     .btn-primary { background: var(--ink); color: #fff; }
     .btn-secondary { background: #fff; color: var(--ink); }
     .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 0 -2px var(--cream), 0 6px 0 0 var(--ink); }
     .btn:focus-visible { outline: 3px solid #E8A12C; outline-offset: 3px; }
-    footer { border-top: 1px solid var(--line); padding: 22px 20px 28px; text-align: center; font-size: 12.5px; color: var(--muted); }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 22px 20px 28px;
+      text-align: center;
+      font-size: 12.5px;
+      color: var(--muted);
+    }
     footer p { max-width: 640px; margin: 0 auto; }
     footer p + p { margin-top: 6px; }
+    footer a { color: inherit; }
   </style>
 </head>
 <body>
@@ -52,6 +180,11 @@
     <h1>SpudSuper</h1>
     <p class="lede">SMSF administration made simple for Aussie workers. We're putting the finishing touches on something good. Check back soon.</p>
 
+    <section class="about" aria-labelledby="about-h">
+      <h2 id="about-h">Self-managed super, minus the paperwork</h2>
+      <p>SpudSuper is an Australian SMSF administration service for workers aged 25 to 55 who want more control over their retirement savings. We take care of the admin that comes with a self-managed super fund, from bookkeeping and investment tracking to annual financial statements, the SMSF annual return, audit coordination and compliance deadlines, so you can focus on your investment strategy.</p>
+    </section>
+
     <ul class="points" aria-label="What we'll do">
       <li>Bookkeeping</li>
       <li>Annual financial statements</li>
@@ -67,7 +200,7 @@
   </main>
 
   <footer>
-    <p>© <span id="y">2026</span> SpudSuper. All rights reserved.</p>
+    <p>© <span id="y">2026</span> SpudSuper · <a href="mailto:hello@spudsuper.com.au">hello@spudsuper.com.au</a> · <a href="https://www.instagram.com/spudsuperau/" rel="me noopener" target="_blank">Instagram</a></p>
     <p>Information on this site is general in nature and does not take into account your personal objectives, financial situation or needs.</p>
   </footer>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
